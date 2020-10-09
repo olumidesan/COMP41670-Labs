@@ -50,5 +50,9 @@ public class Warehouse {
 	public void setItems(WarehouseItem[] items) {
 		this.items = items;
 	}
-
+	
+	public int getTotalInventory() {
+		return items.length;
+	}
+	
 }
