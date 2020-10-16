@@ -20,14 +20,9 @@ public class Drinker extends Person {
 	}
 	
 	public boolean drink(Beverage beverage) {
-		boolean result = false;
-		
-		if (beverage instanceof AlcoholicBeverage) {
-			result = true;
-			numOfAlcoholicDrinks += 1;	
-		}
-		
-		return result;
+		// Increment number of drinks if beverage is alcoholic
+		if (beverage instanceof AlcoholicBeverage) numOfAlcoholicDrinks += 1;
+		return true;
 	}
 	
 	public boolean isDrunk() {

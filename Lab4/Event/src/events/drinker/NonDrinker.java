@@ -8,9 +8,7 @@ import lab2.items.AlcoholicBeverage;
 
 
 public class NonDrinker extends Person {
-	
-	private int numOfDrinks;
-	
+		
 	public NonDrinker(String firstName, String lastName, double weight, Gender gender) {
 		super(firstName, lastName, gender, weight);
 	}
@@ -21,14 +19,8 @@ public class NonDrinker extends Person {
 	}
 	
 	public boolean drink(Beverage beverage) {
-		boolean result = false;
-		
-		if (!(beverage instanceof AlcoholicBeverage)) {
-			result = true;
-			numOfDrinks += 1;	
-		}
-		
-		return result;
+		// Will drink only if beverage is non-alcoholic
+		return !(beverage instanceof AlcoholicBeverage);
 	}
 	
 }
