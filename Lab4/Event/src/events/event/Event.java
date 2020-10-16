@@ -58,7 +58,7 @@ public abstract class Event {
 		String maxAttendees = "\n\tMaximum Attendees: " + maxNumOfParticipants;
 		String attendees = "\n\tAttendees (" + participants.size() + "): " + participants.toString();
 		String queue = "\n\tWaiting Queue (" + waitingQueue.size() + "): " + waitingQueue.toString();
-		String successful = "\n\tIs " + eventType + " successful? " + (isSuccessful() ? "Yes" : "No");
+		String successful = "\n\tIs " + eventType + " event successful? " + (isSuccessful() ? "Yes" : "No");
 		
 		return eventName + maxAttendees + attendees + queue + successful;
 	}
@@ -98,7 +98,7 @@ public abstract class Event {
 	
 	// Setting participants adds the passed people to the 
 	// waiting queue. When the gate is then opened, they
-	// are allowed into the `Event`
+	// are allowed into the `Event`.
 	public void setParticipants(Set<Person> participants) {
 		for (Person participant : participants) {
 			addParticipant(participant);
