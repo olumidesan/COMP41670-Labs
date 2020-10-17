@@ -1,4 +1,4 @@
-package event.tests;
+package events.tests;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,5 +1,12 @@
 package events.demo;
 
+/**
+ * @author Olumide Akinremi
+ * @module COMP41670 Software Engineering
+ * @date   16/10/2020.
+ *
+ */
+
 import java.util.Set;
 
 import lab2.items.Wine;
